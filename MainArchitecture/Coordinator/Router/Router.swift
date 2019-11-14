@@ -100,7 +100,7 @@ final class GMRouter: NSObject, Router {
     func popToModule(module: Presentable?, animated: Bool) {
         if let controllers = self.rootController?.viewControllers , let module = module {
             for controller in controllers {
-                if controller == module as! UIViewController {
+                if controller == module as? UIViewController {
                     self.rootController?.popToViewController(controller, animated: animated)
                     break
                 }

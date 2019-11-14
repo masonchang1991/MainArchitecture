@@ -13,7 +13,7 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     static var shared: AppDelegate {
-        return UIApplication.shared.delegate as! AppDelegate
+        return UIApplication.shared.delegate as! AppDelegate // swiftlint:disable:this force_cast
     }
     
     weak var appCoordinator: AppCoordinator?
