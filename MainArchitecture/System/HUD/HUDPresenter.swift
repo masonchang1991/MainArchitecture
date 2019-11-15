@@ -26,9 +26,9 @@ protocol HUDPresenter: Loggable {
     var dismissAnimation: UIViewPropertyAnimator? { get set }
     
     @discardableResult
-    mutating func show(_ completion: @escaping ((HUDPresenter?) -> ())) -> Self
+    mutating func show(_ completion: @escaping ((HUDPresenter?) -> Void)) -> Self
     @discardableResult
-    mutating func dismiss(immediately: Bool, _ completion: @escaping ((HUDPresenter?) -> ())) -> Self
+    mutating func dismiss(immediately: Bool, _ completion: @escaping ((HUDPresenter?) -> Void)) -> Self
     @discardableResult
     mutating func move(to: CGRect) -> Self
 }
@@ -41,7 +41,7 @@ extension HUDPresenter where Self: UIView {
     }
     
     @discardableResult
-    mutating func show(_ completion: @escaping ((HUDPresenter?) -> ())) -> Self {
+    mutating func show(_ completion: @escaping ((HUDPresenter?) -> Void)) -> Self {
         if showAnimation != nil { return self }
         
         alpha = 0.69
@@ -135,7 +135,7 @@ class GMHUDHandler: Loggable {
     }
     
     private func stack(maxCount: Int) {
-        //MARK: - 起始距離邊緣距離
+        // MARK: - 起始距離邊緣距離
         let originDistance: CGFloat = 100.0
         
         toasts.first?.frame.origin = CGPoint(x: (UIScreen.width - (toasts.first?.bounds.width ?? 0.0)) / 2,
@@ -165,11 +165,11 @@ class GMHUDHandler: Loggable {
     }
     
     private func pushUp(maxCount: Int) {
-        //MARK: - 起始距離邊緣距離
+        // MARK: - 起始距離邊緣距離
         let originDistance: CGFloat = 100.0
-        //MARK: - toasts 間距
+        // MARK: - toasts 間距
         let toastSpacing: CGFloat = 5.0
-        //MARK: - toast 頂距離螢幕邊緣距離
+        // MARK: - toast 頂距離螢幕邊緣距離
         var toastTopToEdgeDistance: CGFloat = originDistance
         
         toasts.first?.frame.origin = CGPoint(x: (UIScreen.width - (toasts.first?.bounds.width ?? 0.0)) / 2,
@@ -201,11 +201,10 @@ class GMHUDHandler: Loggable {
     
     private func cleanDumpList() {
         for dumpToast in needDumpToasts {
-            for (index, toast) in toasts.enumerated().reversed() {
-                if dumpToast === toast { toasts.remove(at: index) }
+            for (index, toast) in toasts.enumerated().reversed() where dumpToast === toast {
+                toasts.remove(at: index)
             }
         }
         needDumpToasts.removeAll()
     }
 }
-

@@ -58,7 +58,7 @@ final class GMRouter: NSObject, Router {
         self.rootController?.present(controller, animated: animated, completion: nil)
     }
     
-    func push(_ module: Presentable?)  {
+    func push(_ module: Presentable?) {
         self.push(module, transition: nil)
     }
     
@@ -66,7 +66,7 @@ final class GMRouter: NSObject, Router {
         self.push(module, transition: transition, animated: true)
     }
     
-    func push(_ module: Presentable?, transition: UIViewControllerAnimatedTransitioning?, animated: Bool)  {
+    func push(_ module: Presentable?, transition: UIViewControllerAnimatedTransitioning?, animated: Bool) {
         self.push(module, transition: transition, animated: animated, completion: nil)
     }
     
@@ -82,7 +82,7 @@ final class GMRouter: NSObject, Router {
         self.rootController?.pushViewController(controller, animated: animated)
     }
     
-    func popModule()  {
+    func popModule() {
         self.popModule(transition: nil)
     }
     
@@ -98,12 +98,10 @@ final class GMRouter: NSObject, Router {
     }
     
     func popToModule(module: Presentable?, animated: Bool) {
-        if let controllers = self.rootController?.viewControllers , let module = module {
-            for controller in controllers {
-                if controller == module as? UIViewController {
-                    self.rootController?.popToViewController(controller, animated: animated)
-                    break
-                }
+        if let controllers = self.rootController?.viewControllers, let module = module {
+            for controller in controllers where controller == module as? UIViewController {
+                self.rootController?.popToViewController(controller, animated: animated)
+                break
             }
         }
     }

@@ -47,6 +47,5 @@ class GMMainCoordinator: MainCoordinator {
     
     private func setDefaultTabbarCoordinators() {
         
-        
     }
 }
