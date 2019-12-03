@@ -24,9 +24,6 @@ class GMToast: UIView, HUDToast {
     
     fileprivate static let insets = UIEdgeInsets(top: 8, left: 15, bottom: 8, right: 15)
     fileprivate static let font = UIFont.systemFont(ofSize: 17)
-    static var singleLineHeight: CGFloat {
-        return font.lineHeight + insets.top + insets.bottom
-    }
     
     var hudId: String
     var hudDescription: String
@@ -40,7 +37,7 @@ class GMToast: UIView, HUDToast {
     
     let displayStyle: DisplayStyle
     
-    init(id: String, description: String = "", message: String, font: UIFont, displayStyle: DisplayStyle = .normal) {
+    init(id: String, description: String = "", message: String, font: UIFont = GMToast.font, displayStyle: DisplayStyle = .normal) {
         self.hudId = id
         self.hudDescription = description
         self.message = message
@@ -60,14 +57,18 @@ class GMToast: UIView, HUDToast {
     override func layoutSubviews() {
         super.layoutSubviews()
         toastLabel.frame = bounds.inset(by: GMToast.insets)
+        layer.cornerRadius = frame.height / 4
     }
     
     func setupViews() {
+        clipsToBounds = true
+        
         addSubview(toastLabel)
         
         switch displayStyle {
         case .normal:
             backgroundColor = UIColor.black.withAlphaComponent(0.56)
+            toastLabel.numberOfLines = 0
             toastLabel.backgroundColor = .clear
             toastLabel.textColor = UIColor.white.withAlphaComponent(0.78)
             toastLabel.textAlignment = .center
@@ -77,7 +78,7 @@ class GMToast: UIView, HUDToast {
     }
     
     private static func textSize(_ maxTextWidth: CGFloat, givenWidth: CGFloat = .greatestFiniteMagnitude, givenHeight: CGFloat = .greatestFiniteMagnitude, text: String) -> CGSize {
-        let constrainedSize = CGSize(width: givenWidth, height: givenHeight)
+        let constrainedSize = CGSize(width: givenWidth - insets.left - insets.right, height: givenHeight)
         let attributes = [NSAttributedString.Key.font: font]
         let options: NSStringDrawingOptions = [.usesFontLeading,
                                                .usesLineFragmentOrigin]
@@ -88,7 +89,8 @@ class GMToast: UIView, HUDToast {
         if maxTextWidth < bounds.width {
             return textSize(maxTextWidth, givenWidth: maxTextWidth, text: text)
         } else {
-            return bounds.size
+            return CGSize(width: ceil(bounds.width) + insets.right + insets.left,
+                          height: ceil(bounds.height) + insets.top + insets.bottom)
         }
     }
     

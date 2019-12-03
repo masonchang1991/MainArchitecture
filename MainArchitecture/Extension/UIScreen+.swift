@@ -17,4 +17,9 @@ extension UIScreen {
     static var height: CGFloat {
         return UIScreen.main.bounds.size.height
     }
+    
+    // 對比 iphone 8
+    static var screenRatio: CGFloat {
+        return (UIScreen.main.bounds.width) / CGFloat(375)
+    }
 }

@@ -7,6 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9330FFB2239613BE009DBBBC /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9330FFB1239613BE009DBBBC /* NotificationService.swift */; };
+		9330FFB42396144A009DBBBC /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9330FFB32396144A009DBBBC /* AppManager.swift */; };
+		9330FFB623961537009DBBBC /* AppService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9330FFB523961537009DBBBC /* AppService.swift */; };
+		9330FFBB239620B0009DBBBC /* APIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9330FFBA239620B0009DBBBC /* APIProtocol.swift */; };
+		9330FFBE23962103009DBBBC /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9330FFBD23962103009DBBBC /* NetworkManager.swift */; };
+		9330FFC0239621D0009DBBBC /* APIProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9330FFBF239621D0009DBBBC /* APIProvider.swift */; };
+		9330FFC323963CC2009DBBBC /* ParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9330FFC223963CC2009DBBBC /* ParameterEncoder.swift */; };
+		9330FFC623963CF8009DBBBC /* JSONParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9330FFC423963CF8009DBBBC /* JSONParameterEncoder.swift */; };
+		9330FFC723963CF8009DBBBC /* URLParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9330FFC523963CF8009DBBBC /* URLParameterEncoder.swift */; };
+		9330FFCA23963D3A009DBBBC /* EndPointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9330FFC923963D3A009DBBBC /* EndPointType.swift */; };
+		9330FFCC23963DC7009DBBBC /* NetworkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9330FFCB23963DC7009DBBBC /* NetworkRouter.swift */; };
+		9330FFCE239644AD009DBBBC /* AlamofireRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9330FFCD239644AD009DBBBC /* AlamofireRouter.swift */; };
+		9330FFD0239646FB009DBBBC /* AlamofireSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9330FFCF239646FB009DBBBC /* AlamofireSession.swift */; };
+		9330FFD6239649D0009DBBBC /* Lock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9330FFD3239649D0009DBBBC /* Lock.swift */; };
+		9330FFD7239649D0009DBBBC /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9330FFD4239649D0009DBBBC /* Observable.swift */; };
+		9330FFD8239649D0009DBBBC /* Disposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9330FFD5239649D0009DBBBC /* Disposable.swift */; };
+		9330FFDB23964A67009DBBBC /* Shimmerable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9330FFDA23964A67009DBBBC /* Shimmerable.swift */; };
+		9330FFDE23964BA3009DBBBC /* LoadUIState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9330FFDD23964BA3009DBBBC /* LoadUIState.swift */; };
+		9330FFE023964CD9009DBBBC /* ControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9330FFDF23964CD9009DBBBC /* ControllerViewModel.swift */; };
+		9330FFE223964DD6009DBBBC /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9330FFE123964DD6009DBBBC /* ListViewModel.swift */; };
+		9330FFE423965100009DBBBC /* IGListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9330FFE323965100009DBBBC /* IGListViewModel.swift */; };
+		9330FFE623965151009DBBBC /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9330FFE523965151009DBBBC /* UIApplication.swift */; };
+		9330FFE823965169009DBBBC /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9330FFE723965169009DBBBC /* UIColor+.swift */; };
+		9330FFEC23965222009DBBBC /* UIImage+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9330FFE923965221009DBBBC /* UIImage+.swift */; };
+		9330FFED23965222009DBBBC /* UINavigationController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9330FFEA23965221009DBBBC /* UINavigationController+.swift */; };
+		9330FFEE23965222009DBBBC /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9330FFEB23965222009DBBBC /* UIView+.swift */; };
+		9330FFF023965296009DBBBC /* UIFont+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9330FFEF23965296009DBBBC /* UIFont+.swift */; };
+		9330FFF2239656B9009DBBBC /* MainTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9330FFF1239656B9009DBBBC /* MainTabbarController.swift */; };
+		9330FFF5239656DA009DBBBC /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9330FFF4239656DA009DBBBC /* ListViewController.swift */; };
+		9330FFF723965894009DBBBC /* IGListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9330FFF623965894009DBBBC /* IGListViewController.swift */; };
 		93316F32237D144D0080472A /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93316F05237D144C0080472A /* BaseVC.swift */; };
 		93316F33237D144D0080472A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93316F09237D144C0080472A /* Assets.xcassets */; };
 		93316F34237D144D0080472A /* ImageAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93316F0A237D144C0080472A /* ImageAsset.swift */; };
@@ -30,9 +60,43 @@
 		93316F48237D144D0080472A /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93316F2D237D144D0080472A /* UIViewController+.swift */; };
 		93316F49237D144D0080472A /* UIScreen+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93316F2E237D144D0080472A /* UIScreen+.swift */; };
 		93316F4A237D144D0080472A /* ViewModelBindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93316F31237D144D0080472A /* ViewModelBindable.swift */; };
+		934453FE23960A42002940C0 /* KeychainConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934453FC23960A42002940C0 /* KeychainConfiguration.swift */; };
+		934453FF23960A42002940C0 /* KeychainItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934453FD23960A42002940C0 /* KeychainItem.swift */; };
+		9344540223960C1B002940C0 /* CoreDataCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9344540123960C1B002940C0 /* CoreDataCoordinator.swift */; };
+		9344540523960EBC002940C0 /* UserDefaultWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9344540423960EBC002940C0 /* UserDefaultWrapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9330FFB1239613BE009DBBBC /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		9330FFB32396144A009DBBBC /* AppManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
+		9330FFB523961537009DBBBC /* AppService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppService.swift; sourceTree = "<group>"; };
+		9330FFBA239620B0009DBBBC /* APIProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIProtocol.swift; sourceTree = "<group>"; };
+		9330FFBD23962103009DBBBC /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		9330FFBF239621D0009DBBBC /* APIProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIProvider.swift; sourceTree = "<group>"; };
+		9330FFC223963CC2009DBBBC /* ParameterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterEncoder.swift; sourceTree = "<group>"; };
+		9330FFC423963CF8009DBBBC /* JSONParameterEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONParameterEncoder.swift; sourceTree = "<group>"; };
+		9330FFC523963CF8009DBBBC /* URLParameterEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLParameterEncoder.swift; sourceTree = "<group>"; };
+		9330FFC923963D3A009DBBBC /* EndPointType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPointType.swift; sourceTree = "<group>"; };
+		9330FFCB23963DC7009DBBBC /* NetworkRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRouter.swift; sourceTree = "<group>"; };
+		9330FFCD239644AD009DBBBC /* AlamofireRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireRouter.swift; sourceTree = "<group>"; };
+		9330FFCF239646FB009DBBBC /* AlamofireSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireSession.swift; sourceTree = "<group>"; };
+		9330FFD3239649D0009DBBBC /* Lock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lock.swift; sourceTree = "<group>"; };
+		9330FFD4239649D0009DBBBC /* Observable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		9330FFD5239649D0009DBBBC /* Disposable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Disposable.swift; sourceTree = "<group>"; };
+		9330FFDA23964A67009DBBBC /* Shimmerable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shimmerable.swift; sourceTree = "<group>"; };
+		9330FFDD23964BA3009DBBBC /* LoadUIState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadUIState.swift; sourceTree = "<group>"; };
+		9330FFDF23964CD9009DBBBC /* ControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerViewModel.swift; sourceTree = "<group>"; };
+		9330FFE123964DD6009DBBBC /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		9330FFE323965100009DBBBC /* IGListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGListViewModel.swift; sourceTree = "<group>"; };
+		9330FFE523965151009DBBBC /* UIApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
+		9330FFE723965169009DBBBC /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
+		9330FFE923965221009DBBBC /* UIImage+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+.swift"; sourceTree = "<group>"; };
+		9330FFEA23965221009DBBBC /* UINavigationController+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+.swift"; sourceTree = "<group>"; };
+		9330FFEB23965222009DBBBC /* UIView+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
+		9330FFEF23965296009DBBBC /* UIFont+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+.swift"; sourceTree = "<group>"; };
+		9330FFF1239656B9009DBBBC /* MainTabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabbarController.swift; sourceTree = "<group>"; };
+		9330FFF4239656DA009DBBBC /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		9330FFF623965894009DBBBC /* IGListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGListViewController.swift; sourceTree = "<group>"; };
 		93316EEC237D14200080472A /* MainArchitecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MainArchitecture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93316EFD237D14200080472A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93316F05237D144C0080472A /* BaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
@@ -58,6 +122,10 @@
 		93316F2D237D144D0080472A /* UIViewController+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
 		93316F2E237D144D0080472A /* UIScreen+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScreen+.swift"; sourceTree = "<group>"; };
 		93316F31237D144D0080472A /* ViewModelBindable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModelBindable.swift; sourceTree = "<group>"; };
+		934453FC23960A42002940C0 /* KeychainConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainConfiguration.swift; sourceTree = "<group>"; };
+		934453FD23960A42002940C0 /* KeychainItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainItem.swift; sourceTree = "<group>"; };
+		9344540123960C1B002940C0 /* CoreDataCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataCoordinator.swift; sourceTree = "<group>"; };
+		9344540423960EBC002940C0 /* UserDefaultWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultWrapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +139,125 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9330FFAE2396124F009DBBBC /* App */ = {
+			isa = PBXGroup;
+			children = (
+				9330FFB32396144A009DBBBC /* AppManager.swift */,
+				9330FFB523961537009DBBBC /* AppService.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		9330FFB0239613A7009DBBBC /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				9330FFB1239613BE009DBBBC /* NotificationService.swift */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		9330FFB723962089009DBBBC /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				9330FFC823963D23009DBBBC /* Service */,
+				9330FFC123963AD4009DBBBC /* Encoding */,
+				9330FFBC239620EC009DBBBC /* Manager */,
+				9330FFB823962094009DBBBC /* API */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		9330FFB823962094009DBBBC /* API */ = {
+			isa = PBXGroup;
+			children = (
+				9330FFB92396209B009DBBBC /* Protocol */,
+				9330FFBF239621D0009DBBBC /* APIProvider.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		9330FFB92396209B009DBBBC /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				9330FFBA239620B0009DBBBC /* APIProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		9330FFBC239620EC009DBBBC /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				9330FFBD23962103009DBBBC /* NetworkManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		9330FFC123963AD4009DBBBC /* Encoding */ = {
+			isa = PBXGroup;
+			children = (
+				9330FFC223963CC2009DBBBC /* ParameterEncoder.swift */,
+				9330FFC423963CF8009DBBBC /* JSONParameterEncoder.swift */,
+				9330FFC523963CF8009DBBBC /* URLParameterEncoder.swift */,
+			);
+			path = Encoding;
+			sourceTree = "<group>";
+		};
+		9330FFC823963D23009DBBBC /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				9330FFC923963D3A009DBBBC /* EndPointType.swift */,
+				9330FFCB23963DC7009DBBBC /* NetworkRouter.swift */,
+				9330FFCD239644AD009DBBBC /* AlamofireRouter.swift */,
+				9330FFCF239646FB009DBBBC /* AlamofireSession.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		9330FFD123964921009DBBBC /* ID */ = {
+			isa = PBXGroup;
+			children = (
+				93316F28237D144D0080472A /* Identifiable.swift */,
+			);
+			path = ID;
+			sourceTree = "<group>";
+		};
+		9330FFD22396493D009DBBBC /* Observable */ = {
+			isa = PBXGroup;
+			children = (
+				9330FFD5239649D0009DBBBC /* Disposable.swift */,
+				9330FFD3239649D0009DBBBC /* Lock.swift */,
+				9330FFD4239649D0009DBBBC /* Observable.swift */,
+			);
+			path = Observable;
+			sourceTree = "<group>";
+		};
+		9330FFD923964A36009DBBBC /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				9330FFDA23964A67009DBBBC /* Shimmerable.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		9330FFDC23964B65009DBBBC /* State */ = {
+			isa = PBXGroup;
+			children = (
+				9330FFDD23964BA3009DBBBC /* LoadUIState.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		9330FFF3239656C2009DBBBC /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				93316F05237D144C0080472A /* BaseVC.swift */,
+				9330FFF1239656B9009DBBBC /* MainTabbarController.swift */,
+				9330FFF4239656DA009DBBBC /* ListViewController.swift */,
+				9330FFF623965894009DBBBC /* IGListViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		93316EE3237D14200080472A = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +277,10 @@
 		93316EEE237D14200080472A /* MainArchitecture */ = {
 			isa = PBXGroup;
 			children = (
+				9330FFB723962089009DBBBC /* Networking */,
+				9330FFB0239613A7009DBBBC /* Notification */,
+				9330FFAE2396124F009DBBBC /* App */,
+				934453FA23960992002940C0 /* LocalStorage */,
 				93316F08237D144C0080472A /* Asset */,
 				93316F07237D144C0080472A /* Cache */,
 				93316F13237D144C0080472A /* Coordinator */,
@@ -106,6 +297,8 @@
 		93316F03237D144C0080472A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9330FFF3239656C2009DBBBC /* Base */,
+				9330FFD923964A36009DBBBC /* Utility */,
 				93316F04237D144C0080472A /* ViewControllers */,
 				93316F06237D144C0080472A /* Views */,
 			);
@@ -115,7 +308,6 @@
 		93316F04237D144C0080472A /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				93316F05237D144C0080472A /* BaseVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -146,6 +338,8 @@
 		93316F0B237D144C0080472A /* System */ = {
 			isa = PBXGroup;
 			children = (
+				9330FFD22396493D009DBBBC /* Observable */,
+				9330FFD123964921009DBBBC /* ID */,
 				93316F0C237D144C0080472A /* FaceStyle */,
 				93316F0D237D144C0080472A /* Error Handler */,
 				93316F0E237D144C0080472A /* Log */,
@@ -171,6 +365,7 @@
 		93316F0E237D144C0080472A /* Log */ = {
 			isa = PBXGroup;
 			children = (
+				93316F29237D144D0080472A /* Loggable.swift */,
 			);
 			path = Log;
 			sourceTree = "<group>";
@@ -245,18 +440,9 @@
 		93316F26237D144D0080472A /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				93316F27237D144D0080472A /* Utility */,
+				9330FFDC23964B65009DBBBC /* State */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		93316F27237D144D0080472A /* Utility */ = {
-			isa = PBXGroup;
-			children = (
-				93316F28237D144D0080472A /* Identifiable.swift */,
-				93316F29237D144D0080472A /* Loggable.swift */,
-			);
-			path = Utility;
 			sourceTree = "<group>";
 		};
 		93316F2A237D144D0080472A /* Extension */ = {
@@ -264,6 +450,12 @@
 			children = (
 				93316F2B237D144D0080472A /* Collection+.swift */,
 				93316F2C237D144D0080472A /* String+.swift */,
+				9330FFE523965151009DBBBC /* UIApplication.swift */,
+				9330FFEF23965296009DBBBC /* UIFont+.swift */,
+				9330FFE923965221009DBBBC /* UIImage+.swift */,
+				9330FFEA23965221009DBBBC /* UINavigationController+.swift */,
+				9330FFEB23965222009DBBBC /* UIView+.swift */,
+				9330FFE723965169009DBBBC /* UIColor+.swift */,
 				93316F2D237D144D0080472A /* UIViewController+.swift */,
 				93316F2E237D144D0080472A /* UIScreen+.swift */,
 			);
@@ -282,8 +474,46 @@
 			isa = PBXGroup;
 			children = (
 				93316F31237D144D0080472A /* ViewModelBindable.swift */,
+				9330FFE123964DD6009DBBBC /* ListViewModel.swift */,
+				9330FFE323965100009DBBBC /* IGListViewModel.swift */,
+				9330FFDF23964CD9009DBBBC /* ControllerViewModel.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		934453FA23960992002940C0 /* LocalStorage */ = {
+			isa = PBXGroup;
+			children = (
+				9344540323960E6F002940C0 /* UserDefault */,
+				9344540023960A91002940C0 /* CoreData */,
+				934453FB239609BF002940C0 /* KeyChain */,
+			);
+			path = LocalStorage;
+			sourceTree = "<group>";
+		};
+		934453FB239609BF002940C0 /* KeyChain */ = {
+			isa = PBXGroup;
+			children = (
+				934453FC23960A42002940C0 /* KeychainConfiguration.swift */,
+				934453FD23960A42002940C0 /* KeychainItem.swift */,
+			);
+			path = KeyChain;
+			sourceTree = "<group>";
+		};
+		9344540023960A91002940C0 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				9344540123960C1B002940C0 /* CoreDataCoordinator.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		9344540323960E6F002940C0 /* UserDefault */ = {
+			isa = PBXGroup;
+			children = (
+				9344540423960EBC002940C0 /* UserDefaultWrapper.swift */,
+			);
+			path = UserDefault;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -378,26 +608,60 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9330FFF023965296009DBBBC /* UIFont+.swift in Sources */,
 				93316F38237D144D0080472A /* AppCoordinator.swift in Sources */,
 				93316F3A237D144D0080472A /* Presentable.swift in Sources */,
+				9330FFDE23964BA3009DBBBC /* LoadUIState.swift in Sources */,
+				9330FFB2239613BE009DBBBC /* NotificationService.swift in Sources */,
+				9330FFD0239646FB009DBBBC /* AlamofireSession.swift in Sources */,
+				9330FFC0239621D0009DBBBC /* APIProvider.swift in Sources */,
 				93316F48237D144D0080472A /* UIViewController+.swift in Sources */,
 				93316F45237D144D0080472A /* Loggable.swift in Sources */,
+				9330FFEC23965222009DBBBC /* UIImage+.swift in Sources */,
+				9330FFEE23965222009DBBBC /* UIView+.swift in Sources */,
+				9330FFE223964DD6009DBBBC /* ListViewModel.swift in Sources */,
+				9330FFD6239649D0009DBBBC /* Lock.swift in Sources */,
 				93316F39237D144D0080472A /* MainCoordinator.swift in Sources */,
+				9330FFB42396144A009DBBBC /* AppManager.swift in Sources */,
+				9330FFD8239649D0009DBBBC /* Disposable.swift in Sources */,
+				9330FFBB239620B0009DBBBC /* APIProtocol.swift in Sources */,
 				93316F35237D144D0080472A /* HUDObject_Indicator.swift in Sources */,
+				9344540523960EBC002940C0 /* UserDefaultWrapper.swift in Sources */,
+				9330FFB623961537009DBBBC /* AppService.swift in Sources */,
+				9330FFE823965169009DBBBC /* UIColor+.swift in Sources */,
+				9330FFC723963CF8009DBBBC /* URLParameterEncoder.swift in Sources */,
+				9330FFCA23963D3A009DBBBC /* EndPointType.swift in Sources */,
+				9330FFED23965222009DBBBC /* UINavigationController+.swift in Sources */,
+				9330FFD7239649D0009DBBBC /* Observable.swift in Sources */,
 				93316F47237D144D0080472A /* String+.swift in Sources */,
+				9330FFBE23962103009DBBBC /* NetworkManager.swift in Sources */,
+				934453FF23960A42002940C0 /* KeychainItem.swift in Sources */,
+				9330FFCC23963DC7009DBBBC /* NetworkRouter.swift in Sources */,
 				93316F41237D144D0080472A /* AppDelegate.swift in Sources */,
+				934453FE23960A42002940C0 /* KeychainConfiguration.swift in Sources */,
 				93316F40237D144D0080472A /* CoordinatorAppService.swift in Sources */,
+				9330FFF5239656DA009DBBBC /* ListViewController.swift in Sources */,
+				9330FFDB23964A67009DBBBC /* Shimmerable.swift in Sources */,
+				9330FFC323963CC2009DBBBC /* ParameterEncoder.swift in Sources */,
+				9330FFCE239644AD009DBBBC /* AlamofireRouter.swift in Sources */,
 				93316F3E237D144D0080472A /* Router.swift in Sources */,
+				9330FFE623965151009DBBBC /* UIApplication.swift in Sources */,
 				93316F34237D144D0080472A /* ImageAsset.swift in Sources */,
 				93316F36237D144D0080472A /* HUDPresenter.swift in Sources */,
+				9330FFE023964CD9009DBBBC /* ControllerViewModel.swift in Sources */,
+				9330FFF723965894009DBBBC /* IGListViewController.swift in Sources */,
 				93316F46237D144D0080472A /* Collection+.swift in Sources */,
 				93316F32237D144D0080472A /* BaseVC.swift in Sources */,
 				93316F4A237D144D0080472A /* ViewModelBindable.swift in Sources */,
 				93316F37237D144D0080472A /* HUDObject_Toast.swift in Sources */,
+				9330FFE423965100009DBBBC /* IGListViewModel.swift in Sources */,
+				9330FFC623963CF8009DBBBC /* JSONParameterEncoder.swift in Sources */,
 				93316F49237D144D0080472A /* UIScreen+.swift in Sources */,
+				9344540223960C1B002940C0 /* CoreDataCoordinator.swift in Sources */,
 				93316F3B237D144D0080472A /* Coordinator.swift in Sources */,
 				93316F44237D144D0080472A /* Identifiable.swift in Sources */,
 				93316F3D237D144D0080472A /* CoordinatorFactory.swift in Sources */,
+				9330FFF2239656B9009DBBBC /* MainTabbarController.swift in Sources */,
 				93316F3C237D144D0080472A /* VCFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -466,7 +730,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -520,7 +784,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
